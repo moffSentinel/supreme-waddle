@@ -1,0 +1,25 @@
+{
+  "configurations": [
+    {
+      "name": "Create ToDo's",
+      "type": "node",
+      "request": "launch",
+      "runtimeExecutable": "node",
+      "runtimeArgs": ["--nolazy", "-r", "ts-node/register/transpile-only"],
+      "args": [
+        "todo-parser.ts",
+        "--cwd",
+        "../..",
+        "--owner",
+        "SentinelSoftware",
+        "--project",
+        "web-application",
+        "--token",
+        "yourTokenHere"
+      ],
+      "cwd": "${workspaceRoot}",
+      "internalConsoleOptions": "openOnSessionStart",
+      "skipFiles": ["<node_internals>/**", "node_modules/**"]
+    }
+  ]
+}
